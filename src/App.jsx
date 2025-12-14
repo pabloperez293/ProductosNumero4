@@ -5,14 +5,15 @@ import { ItemListContainer } from "./components/ItemListContainer/itemListContai
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
 import { CartProvider } from "./context/CartContext/CartProvider";
+import { MainLayout } from "./layouts/MainLayout";
+import { AdminLayout } from "./layouts/AdminLayout";
 
 function App() {
   return (
     <BrowserRouter>
       <CartProvider>
-        <Navbar />
         <Routes>
-          <Route>
+          <Route element={<MainLayout />}>
             <Route path="/" element={<ItemListContainer />} />
             <Route path="/detail/:id" element={ItemDetailContainer} />
             <Route
