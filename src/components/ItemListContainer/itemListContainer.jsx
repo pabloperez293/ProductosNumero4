@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ItemList } from "../ItemList/itemList";
+import { ItemList } from "../ItemList/ItemList";
 
 export const ItemListContainer = () => {
   const [products, setProductos] = useState([]);
@@ -12,7 +12,7 @@ export const ItemListContainer = () => {
         }
         return res.json();
       })
-      .then((data) => setProductos(data))
+      .then((data) => setProductos(data.products))
       .catch((error) => console.log(error));
   }, []);
 
