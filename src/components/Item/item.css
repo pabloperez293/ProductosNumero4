@@ -1,0 +1,102 @@
+.product-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+.product-action{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* changed code: tarjeta (card) para Item */
+.product-item{
+  width: 280px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  overflow: hidden;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform .18s ease, box-shadow .18s ease;
+  margin: 12px;
+}
+
+.product-item img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.product-title{
+  font-size: 1.25rem;
+  margin: 0;
+  color: #222;
+  text-align: center;
+}
+
+.product-item p{
+  margin: 4px 0;
+  color: #555;
+  text-align: center;
+}
+
+.product-price{
+  font-weight: 700;
+  color: #111;
+}
+
+.product-description{
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* mejora para botones dentro de .product-action */
+.product-action{
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-action button{
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .15s ease, transform .12s ease;
+}
+
+.product-action button:hover{
+  background: #0b5ed7;
+  transform: translateY(-2px);
+}
+
+.product-action .secondary{
+  background: transparent;
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
+}
+
+/* efecto hover tarjeta */
+.product-item:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* responsive */
+@media (max-width: 720px){
+  .product-item{
+    width: 100%;
+  }
+}
