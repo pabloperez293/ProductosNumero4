@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
