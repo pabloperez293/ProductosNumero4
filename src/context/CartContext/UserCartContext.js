@@ -3,6 +3,6 @@ import { CartContext } from "./CartContext"
 
 export const UserCartContext = createContext();
 
-export const useCartContext = () => {
+export const UseCartContext = () => {
     return useContext(CartContext);
 }

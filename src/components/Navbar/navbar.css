@@ -1,77 +1,79 @@
-.navbar-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background: #fff;
-  padding: 15px 7%;
-}
-.logo {
-  width: 160px;
-  cursor: pointer;
-}
-.buscador {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: grey;
-  font-size: 24px;
-}
-.buscador-input {
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  font-size: 18px;
-}
-.navbar-menu {
-  background: #fff;
-  flex: 1;
-  text-align: center;
-  cursor: pointer;
-}
-.navbar-menu a {
-  text-decoration: none;
-  color: #000;
-  margin: 0 15px;
-  font-weight: bold;
-  border: 20px solid transparent;
-  padding: 7px 0;
-  border-radius: 5px;
-  font-size: 18px;
-}
-.star-icon {
-  margin-left: 10px;
-  color: orange;
-}
-.star-icon1 {
-  margin-left: 10px;
+nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 
-  color: red;
-}
-.star-icon2 {
-  margin-left: 10px;
+  .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* El menú queda centrado */
+    position: relative;
+  }
 
-  color: green;
+  .logo {
+    position: absolute;
+    left: 0; /* SE VA A LA IZQUIERDA */
+  }
+
+  .logo a {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #111827;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+
+  .logo a:hover {
+    color: #000;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  li {
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+    padding: 0.5rem 0;
+    display: inline-block;
+
+    &:hover{
+      color: #000000;
+    }
+  }
 }
-.star-icon3 {
-  margin-left: 10px;
-  color: brown;
-}
-.carrito-icono {
-  position: relative;
-  display: inline-block;
-}
-.carrito-cantidad {
+
+.in-cart {
+  position: absolute;
   top: -8px;
-  right: 20px;
-  background: red;
+  right: -12px;
+  background-color: #ef4444;
   color: white;
-  border-radius: 50%;
-  padding: 2px 6px;
-  font-size: 12px;
-  font-weight: bold;
-  margin: 0;
-  z-index: 1;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  min-width: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.3);
 }

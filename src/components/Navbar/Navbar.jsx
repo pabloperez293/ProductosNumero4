@@ -1,11 +1,11 @@
 import React from "react";
-import "./Navbar.css";
-import { UserCartContext } from "../../context/CartContext/UserCartContext";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
+import { UseCartContext } from "../../context/CartContext/UserCartContext";
 
 const Navbar = () => {
 
-  const { getTotalItems } = UserCartContext();
+  const { getTotalItems } = UseCartContext();
   return (
     <nav>
       <ul>
