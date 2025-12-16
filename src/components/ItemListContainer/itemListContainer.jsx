@@ -5,7 +5,7 @@ export const ItemListContainer = () => {
   const [products, setProductos] = useState([]);
 
   useEffect(() => {
-    fetch("/data/products.json")
+    fetch("./data/products.json")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Tenemos un problema en los prodcutos");

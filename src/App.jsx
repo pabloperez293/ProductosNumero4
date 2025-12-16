@@ -11,7 +11,7 @@ import { RutaProtegida } from "./components/RutaProtegida/RutaProtegida";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ProductosNumero4">
       <CartProvider>
         <Routes>
           <Route element={<MainLayout />}>
